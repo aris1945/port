@@ -7,17 +7,17 @@ $url = 'https://api.viewblock.io/zilliqa/addresses/zil1zzkmdmj9vuefxvwt44wygzg66
 $wallet = array("zil1zzkmdmj9vuefxvwt44wygzg662dhnu9xk4m2j2", "zil1tucq4asz5wt4wpvxl68gyv9k7w2tepp350zv9d", 
 				"zil132sy6mp6u0s6c086t7xawfnc2uxa3kwdjgj6sg","zil14j2r33zl5y3xvqda6vkup5efsky8srw962p6f3");
 				echo "<b>".$name." ".$simbol."</b>";
-				echo "<br>";
+				echo "\n";
 				echo "<b>".round($rateZil,2)." ZIL - $".round($rateUsd,2)."</b>";
-				echo "<br>";
+				echo "\n";
 				echo "Change (24h): <b>".round($change,2)."% </b>";
-				echo "<br>";
+				echo "\n";
 				echo "Market Cap: <b>$".number_format(round($marketCap,2),2,".",",")."</b>";
-				echo "<br>";
+				echo "\n";
 				echo "Volume (24): <b>$".number_format(round($volume,2),2,".",",")."</b>";
-				echo "<br>";
+				echo "\n";
 				echo "Circ. Supply: <b>".number_format(round($cirSupply,2),2,".",",")."</b>";
-				echo "<br>";
+				echo "\n";
 foreach ($wallet as $key) {
 				$contract_port = "zil18f5rlhqz9vndw4w8p60d0n7vg3n9sqvta7n6t2";
 				$contract_xport = "zil1hpwshtxspjakjh5sn7vn4e7pp4gaqkefup24h2";
@@ -54,14 +54,14 @@ foreach ($wallet as $key) {
 				$fixbalport = $cok["tokens"]["$contract_port"]["balance"] / 10000;
 				$fixbalxport = $cok["tokens"]["$contract_xport"]["balance"] / 10000;
 				echo "-------------------------";
-				echo "<br>";
+				echo "\n";
 				echo "Wallet : <b>".$key."</b>";
-				echo "<br>";
+				echo "\n";
 				echo "Total PORT : <b>".$fixbalport." - $".number_format(round($fixbalport * $rateUsd,2),2,".",",")."</b>";
-				echo "<br>";
+				echo "\n";
 				echo "Total XPORT : ".$fixbalxport;
-				echo "<br>";
+				echo "\n";
 				echo "-------------------------";
-				echo "<br>";
+				echo "\n";
 }
 ?>
